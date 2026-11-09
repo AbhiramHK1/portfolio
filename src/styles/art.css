@@ -1,0 +1,201 @@
+/* Shared paint for the project illustrations, so they follow the light and dark themes. */
+.art {
+  --art-bg: var(--surface-2);
+  --art-panel: var(--surface);
+  --art-node: color-mix(in srgb, var(--ink) 22%, var(--art-bg));
+  --art-mute: color-mix(in srgb, var(--ink) 14%, var(--art-panel));
+  --art-mid: color-mix(in srgb, var(--ink) 34%, var(--art-panel));
+  --art-line: color-mix(in srgb, var(--ink) 16%, var(--art-bg));
+}
+
+.a-bg {
+  fill: var(--art-bg);
+}
+.a-panel {
+  fill: var(--art-panel);
+}
+.a-ink {
+  fill: var(--ink);
+}
+.a-acc {
+  fill: var(--accent);
+}
+.a-warn {
+  fill: var(--warn);
+}
+.a-soft {
+  fill: var(--accent-soft);
+}
+.a-warn-soft {
+  fill: var(--warn-soft);
+}
+.a-mute {
+  fill: var(--art-mute);
+}
+.a-mid {
+  fill: var(--art-mid);
+}
+.a-node {
+  fill: var(--art-node);
+}
+.a-block {
+  fill: color-mix(in srgb, var(--ink) 5%, var(--art-bg));
+}
+.a-floor {
+  fill: var(--art-panel);
+}
+.a-seat {
+  fill: var(--art-mute);
+}
+.a-bubble {
+  fill: var(--art-bg);
+}
+.a-fade {
+  opacity: 0.75;
+}
+.a-dot {
+  stroke: var(--art-panel);
+  stroke-width: 2;
+}
+.a-ring {
+  fill: var(--art-panel);
+}
+.a-on-accent {
+  fill: var(--accent-ink);
+  opacity: 0.75;
+}
+.a-on-ink {
+  fill: var(--bg);
+}
+.a-truck-mark {
+  fill: var(--bg);
+  opacity: 0.55;
+}
+
+.a-street,
+.a-arterial,
+.a-route,
+.a-route-casing,
+.a-gauge,
+.a-gauge-on,
+.a-spark,
+.a-link,
+.a-link-warn,
+.a-link-acc,
+.a-warn-halo,
+.a-flag,
+.a-lane,
+.a-rule,
+.a-check,
+.a-rail,
+.a-axis,
+.a-donut-acc,
+.a-donut-ink,
+.a-donut-mid,
+.a-donut-warn {
+  fill: none;
+}
+
+.a-street {
+  stroke: color-mix(in srgb, var(--ink) 9%, var(--art-bg));
+  stroke-width: 1.2;
+}
+.a-arterial {
+  stroke: color-mix(in srgb, var(--ink) 14%, var(--art-bg));
+  stroke-width: 3.5;
+}
+.a-route-casing {
+  stroke: var(--art-bg);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.a-route {
+  stroke: var(--accent);
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.a-gauge {
+  stroke: var(--art-mute);
+  stroke-width: 5;
+}
+.a-gauge-on {
+  stroke: var(--accent);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.a-spark {
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.a-link {
+  stroke: var(--art-line);
+  stroke-width: 2;
+}
+.a-link-warn {
+  stroke: var(--warn);
+  stroke-width: 2.5;
+}
+.a-link-acc {
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+.a-warn-halo {
+  stroke: var(--warn);
+  stroke-width: 1.5;
+  opacity: 0.45;
+}
+.a-flag {
+  stroke: var(--accent-ink);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+:root[data-theme='dark'] .a-flag {
+  stroke: #2a1505;
+}
+.a-lane {
+  stroke: var(--art-panel);
+  stroke-width: 2;
+  stroke-dasharray: 16 12;
+}
+.a-rule {
+  stroke: var(--art-mute);
+  stroke-width: 1;
+}
+.a-axis {
+  stroke: var(--art-mid);
+  stroke-width: 1;
+}
+.a-check {
+  stroke: var(--accent-ink);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.a-rail {
+  stroke: var(--ink);
+  stroke-width: 4;
+}
+
+.a-donut-acc,
+.a-donut-ink,
+.a-donut-mid,
+.a-donut-warn {
+  stroke-width: 22;
+}
+.a-donut-acc {
+  stroke: var(--accent);
+}
+.a-donut-ink {
+  stroke: var(--ink);
+}
+.a-donut-mid {
+  stroke: var(--art-mid);
+}
+.a-donut-warn {
+  stroke: var(--warn);
+}

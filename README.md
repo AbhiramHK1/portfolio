@@ -26,6 +26,6 @@ All of the text lives in [`src/content/profile.ts`](src/content/profile.ts): exp
 1. On GitHub, open **Settings → Pages** and set **Source** to **GitHub Actions**.
 2. Push to the `main` branch.
 
-The workflow in `.github/workflows/deploy.yml` builds the site and publishes it to `https://abhiramhk1.github.io/MyWebsite/`.
+The workflow in `.github/workflows/deploy.yml` builds the site and publishes it to `https://abhiramhk1.github.io/portfolio/`.
 
 If you later use a custom domain or rename the repository, update the address in the `canonical`, `og:url`, `og:image` and JSON-LD entries in `index.html` so that link previews keep working.
